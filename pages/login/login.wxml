@@ -1,2 +1,5 @@
 <!--pages/login/login.wxml-->
-<button class="weui-btn" type="primary"  open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">{{phoneNumber==null?'获取手机号':phoneNumber}}</button>
+<view class="container" style="display: flex;justify-content:center;">
+  <button class="weui-btn" style="width: 80%;" type="primary" open-type="getPhoneNumber"
+    bindgetphonenumber="getPhoneNumber">{{phoneNumber==null?'手机号登陆':phoneNumber}}</button>
+</view>

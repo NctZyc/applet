@@ -11,10 +11,6 @@ Page({
     var that = this;
     if (e.detail.errMsg == "getPhoneNumber:ok") {
       console.log("可去解密吧！");
-      console.log(app.globalData.serverUrl);
-      console.log(e.detail.encryptedData);
-      console.log(e.detail.iv);
-      console.log(app.globalData.session_key);
       wx.request({
         url: app.globalData.serverUrl + "/api/yygy/decodePhone",
         data: {
@@ -28,7 +24,7 @@ Page({
         success: (res) => {
           console.log("有没有获取到手机号呀");
           if (res.data.phoneNumber != undefined) {
-            console.log("获取到了");
+            console.log("获取到了手机号为：");
             console.log(res);
             that.setData({
               phoneNumber: res.data.phoneNumber,

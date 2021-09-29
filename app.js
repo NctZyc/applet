@@ -11,6 +11,9 @@ App({
         console.log("处于登录态");
         that.globalData.openid = wx.getStorageSync("openid");
         that.globalData.session_key = wx.getStorageSync("session_key");
+        wx.switchTab({
+          url: "/pages/index/index",
+        });
       },
 
       fail: function (res) {

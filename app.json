@@ -24,11 +24,11 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "1号"
+        "text": "工作台"
       },
       {
         "pagePath": "pages/workbench/workbench",
-        "text": "2号"
+        "text": "个人中心"
       }
     ],
     "position": "bottom",
